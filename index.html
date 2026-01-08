@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redbook Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Redbook Store</h1>
+    </div>
+    <div class="container">
+        <div class="book">
+        <h2>The Psychology of Money</h2>
+        <h5>Robert John</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor numquam minus aperiam eos totam voluptatem explicabo maiores deserunt tenetur!
+        </p>
+        <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="title">
+            <input type="text" placeholder="Author Name" id="Author_Name">
+            <textarea placeholder="Description" id="description"></textarea>
+            <button id="add">Add</button>
+            <button id="Cancel">Cancel</button>
+        </form>
+    </div>
+
+    <button class="btm" id="add_button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
